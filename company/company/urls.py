@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from employee.views import index
 from employee.views import home
-from account.views import log
+from account.views import log,register
 
 
 urlpatterns = [
@@ -25,4 +25,5 @@ urlpatterns = [
     path('index/',index),
     path('home/',home),
     path('log/',log),
+    path('regsiter/',register),
 ]
